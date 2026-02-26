@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Reformas - Serviços de Reforma e Pintura</title>
+    <meta name="description" content="Master Reformas – pintura e reformas residenciais e comerciais com 15 anos de experiência.">
+    <meta property="og:title" content="Master Reformas – Serviços de Reforma e Pintura">
+    <meta property="og:description" content="Transformando seus espaços com excelência">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.masterreformas.com.br/">
+    <meta name="robots" content="index, follow">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="font-sans bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir chat WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-paint-roller text-3xl text-blue-600 mr-2"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Master<span class="text-blue-600">Reformas</span></h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8" aria-label="Menu principal">
+                    <a href="#home" class="text-gray-800 hover:text-blue-600 font-medium">Início</a>
+                    <a href="#services" class="text-gray-800 hover:text-blue-600 font-medium">Serviços</a>
+                    <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">Sobre</a>
+                    <a href="#portfolio" class="text-gray-800 hover:text-blue-600 font-medium">Portfólio</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Contato</a>
+                </nav>
+                
+                <button class="md:hidden text-gray-800" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <nav class="md:hidden hidden mt-4" id="mobile-menu" aria-label="Menu móvel">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-800 hover:text-blue-600 font-medium">Início</a>
+                    <a href="#services" class="text-gray-800 hover:text-blue-600 font-medium">Serviços</a>
+                    <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">Sobre</a>
+                    <a href="#portfolio" class="text-gray-800 hover:text-blue-600 font-medium">Portfólio</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white" id="home">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transformando seus espaços com excelência</h1>
+            <p class="text-xl md:text-2xl mb-8">Serviços profissionais de reforma e pintura residencial e comercial</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Solicite um Orçamento</a>
+                <a href="#services" class="bg-transparent hover:bg-white hover:text-blue-600 text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300">Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white" id="services">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Oferecemos soluções completas em reformas e pinturas com qualidade e comprometimento</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-paint-roller text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Pintura Residencial</h3>
+                        <p class="text-gray-600 mb-4">Pintura interna e externa de residências com materiais de alta qualidade e acabamento impecável.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Preparação de superfícies</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Pintura com rolo e pistola</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Acabamento profissional</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-building text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Pintura Comercial</h3>
+                        <p class="text-gray-600 mb-4">Pintura de estabelecimentos comerciais com técnicas profissionais e menor impacto nas atividades.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Trabalhos noturnos disponíveis</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Tintas especiais para cada ambiente</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Limpeza e organização</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-hammer text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Reformas Gerais</h3>
+                        <p class="text-gray-600 mb-4">Reformas completas de ambientes residenciais e comerciais com planejamento detalhado.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Demolição e reconstrução</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Troca de revestimentos</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Elétrica e hidráulica</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-trowel text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Acabamentos</h3>
+                        <p class="text-gray-600 mb-4">Serviços especializados em acabamentos para valorizar seu imóvel.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Texturas decorativas</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Pintura em madeira e metais</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Efeitos especiais</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-broom text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Limpeza Pós-Obra</h3>
+                        <p class="text-gray-600 mb-4">Serviço completo de limpeza após reformas e pinturas.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Remoção de resíduos</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Limpeza profunda</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Organização do ambiente</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-clipboard-check text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Consultoria</h3>
+                        <p class="text-gray-600 mb-4">Auxílio na escolha de cores, materiais e planejamento de reformas.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Paleta de cores</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Seleção de materiais</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-2"></i> Layout e funcionalidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-100" id="about">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Equipe Master Reformas" loading="lazy" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Sobre Nós</h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-4">A Master Reformas é uma empresa especializada em serviços de pintura e reformas, atuando no mercado há mais de 15 anos com excelência e comprometimento.</p>
+                    <p class="text-gray-600 mb-6">Nossa equipe é composta por profissionais qualificados e experientes, que utilizam materiais de primeira linha e técnicas atualizadas para garantir a satisfação total de nossos clientes.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-medal text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Qualidade Garantida</h4>
+                                <p class="text-gray-600">Utilizamos apenas materiais premium e técnicas comprovadas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Pontualidade</h4>
+                                <p class="text-gray-600">Cumprimos rigorosamente os prazos estabelecidos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-dollar-sign text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Preço Justo</h4>
+                                <p class="text-gray-600">Orçamentos transparentes sem custos ocultos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-headset text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Suporte</h4>
+                                <p class="text-gray-600">Atendimento personalizado antes, durante e após o serviço.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-16 bg-white" id="portfolio">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Trabalhos</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Confira alguns de nossos projetos recentes de reforma e pintura</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=80" alt="Projeto Residencial" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Pintura Residencial</h3>
+                            <p>Apartamento completo em São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Reforma Completa" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Reforma Completa</h3>
+                            <p>Casa em Guarulhos - 120m²</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Pintura Comercial" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Pintura Comercial</h3>
+                            <p>Escritório corporativo - 200m²</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Acabamentos" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Acabamentos Especiais</h3>
+                            <p>Textura decorativa em sala de estar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600566752227-8685724d8f1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pintura Externa" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Pintura Externa</h3>
+                            <p>Fachada de prédio residencial</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Reforma de Cozinha" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Reforma de Cozinha</h3>
+                            <p>Projeto completo com ilha central</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Solicite Seu Orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que dizem nossos clientes</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente" loading="lazy" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Carolina</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Contratei a Master Reformas para pintar meu apartamento e fiquei impressionada com a qualidade do serviço. Os pintores foram extremamente cuidadosos com meus móveis e o acabamento ficou perfeito. Super recomendo!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" loading="lazy" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Roberto Almeida</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Precisava reformar meu escritório com urgência para um evento importante. A equipe da Master Reformas fez um trabalho impecável em tempo recorde, atendendo todas as minhas expectativas. Profissionais competentes e atenciosos."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente" loading="lazy" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Mariana Santos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Reformei minha cozinha com a Master e adorei o resultado! A equipe foi muito profissional desde o planejamento até a execução. O acabamento ficou perfeito e o preço foi justo pelo serviço de qualidade oferecido."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Solicite um orçamento ou tire suas dúvidas sobre nossos serviços</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <option value="">Selecione um serviço</option>
+                                <option value="pintura-residencial">Pintura Residencial</option>
+                                <option value="pintura-comercial">Pintura Comercial</option>
+                                <option value="reformas">Reformas Gerais</option>
+                                <option value="acabamentos">Acabamentos</option>
+                                <option value="limpeza">Limpeza Pós-Obra</option>
+                                <option value="consultoria">Consultoria</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                    <p class="text-gray-600">Rua das Reformas, 123<br>Centro, São Paulo - SP<br>CEP: 01001-000</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                    <p class="text-gray-600">(11) 9999-9999</p>
+                                    <p class="text-gray-600">(11) 8888-8888</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">E-mail</h4>
+                                    <p class="text-gray-600">contato@masterreformas.com.br</p>
+                                    <p class="text-gray-600">orcamentos@masterreformas.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 8h às 18h</p>
+                                    <p class="text-gray-600">Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Perguntas Frequentes</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition duration-200">
+                        <h3 class="text-lg font-medium text-gray-800 text-left">Quanto tempo dura uma pintura residencial?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50">
+                        <p class="text-gray-600">O tempo de execução varia de acordo com o tamanho do imóvel e as condições das superfícies. Em média, um apartamento de 70m² leva de 3 a 5 dias para pintura interna, considerando preparação das superfícies, aplicação e secagem. Para casas, o tempo pode ser maior dependendo da área externa.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition duration-200">
+                        <h3 class="text-lg font-medium text-gray-800 text-left">Quais tipos de tinta vocês utilizam?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50">
+                        <p class="text-gray-600">Trabalhamos com as melhores marcas do mercado (Suvinil, Coral, Sherwin-Williams) e selecionamos o tipo de tinta mais adequado para cada ambiente. Para áreas internas usamos tintas acrílicas de alta qualidade, para áreas externas utilizamos tintas específicas com proteção UV e para áreas úmidas (banheiros e cozinhas) aplicamos tintas com propriedades antimofo.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition duration-200">
+                        <h3 class="text-lg font-medium text-gray-800 text-left">Preciso me ausentar durante a reforma?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50">
+                        <p class="text-gray-600">Depende do tipo de serviço. Para pinturas simples, muitas vezes é possível permanecer no local, tomando alguns cuidados. Já para reformas mais extensas, recomendamos que o cliente se ausente, principalmente durante as etapas de demolição e preparação, que geram mais poeira e barulho. Nossa equipe é treinada para trabalhar com segurança mesmo sem supervisão constante.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition duration-200">
+                        <h3 class="text-lg font-medium text-gray-800 text-left">Como é calculado o orçamento?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50">
+                        <p class="text-gray-600">O orçamento é calculado com base em: 1) Metragem quadrada do local; 2) Tipo de serviço necessário (preparação de superfície, número de demãos, tipo de acabamento); 3) Qualidade dos materiais a serem utilizados; 4) Complexidade do trabalho (altura, acesso, detalhes arquitetônicos). Realizamos uma visita técnica gratuita para avaliar todos esses fatores e fornecer um orçamento detalhado e personalizado.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition duration-200">
+                        <h3 class="text-lg font-medium text-gray-800 text-left">Vocês oferecem garantia?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50">
+                        <p class="text-gray-600">Sim, todos os nossos serviços possuem garantia. Para pinturas, oferecemos garantia de 1 ano contra defeitos de aplicação. Para reformas, a garantia varia de acordo com o serviço executado (em média de 3 meses a 1 ano). A garantia cobre problemas relacionados à mão de obra, desde que não haja interferência de terceiros ou condições inadequadas de uso do ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar seu espaço?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Entre em contato agora mesmo e solicite um orçamento sem compromisso</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg transition duration-300">Solicitar Orçamento</a>
+                <a href="tel:+5511999999999" class="bg-transparent hover:bg-blue-700 text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300">Ligar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-roller text-3xl text-blue-400 mr-2"></i>
+                        <h3 class="text-2xl font-bold">Master<span class="text-blue-400">Reformas</span></h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Transformando espaços com qualidade e comprometimento há mais de 15 anos no mercado.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Início</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Sobre Nós</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition duration-300">Portfólio</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pintura Residencial</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pintura Comercial</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Reformas Gerais</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Acabamentos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Consultoria</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contato</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Rua das Reformas, 123<br>Centro, São Paulo - SP</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">(11) 9999-9999</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">contato@masterreformas.com.br</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">Seg-Sex: 8h-18h<br>Sáb: 8h-12h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Master Reformas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        menuToggle.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const isHidden = menu.classList.toggle('hidden');
+            // update ARIA state
+            this.setAttribute('aria-expanded', String(!isHidden));
+        });
+
+        // FAQ toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
